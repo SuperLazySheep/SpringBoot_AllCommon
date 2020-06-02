@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+  <contextName>logback</contextName>
+  <property name="log_dir" value="./log"/>
+  <property name="maxHistory" value="60"/>
+  <property name="DATETIME" value="yyyy-MM-dd HH:mm:ss"/>
+  <property name="home" value="./log"/>
+  <property name="minIndex" value="1"/>
+  <property name="maxIndex" value="3"/>
+  <property name="maxSize" value="20MB"/>
+  <property name="charset" value="UTF-8"/>
+  <property name="totalSize" value="2GB"/>
+  <property name="pattern" value="%d [%t] %-5p %replace(%caller{1}){'\\s|Caller|\\+0|at', ''}- %msg%n"/>
+  <property name="outPattern" value="%d{HH:mm:ss} [%t] %-5p %replace(%caller{1}){'\\s|Caller|\\+0|at', ''}- %msg%n"/>
+
+
+  <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder charset="utf-8">
+      <pattern>%d{${DATETIME}} [%thread] %-5level %logger -%msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- INFO 输入到文件，按日期和文件大小 -->
+  <appender name="info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <encoder charset="utf-8">
+      <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger{36} - %m%n
+      </pattern>
+    </encoder>
+    <filter class="ch.qos.logback.classic.filter.LevelFilter">
+      <level>INFO</level>
+      <onMatch>ACCEPT</onMatch>
+      <onMismatch>DENY</onMismatch>
+    </filter>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- 按天回滚 daily -->
+      <fileNamePattern>${log_dir}/info%d{yyyy-MM-dd}.log
+      </fileNamePattern>
+      <!-- 日志最大的历史 60天 -->
+      <maxHistory>${maxHistory}</maxHistory>
+      <totalSizeCap>${totalSize}</totalSizeCap>
+    </rollingPolicy>
+  </appender>
+
+  <!-- INFO 输入到文件，按日期和文件大小 -->
+  <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <encoder charset="utf-8">
+      <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger{36} - %m%n
+      </pattern>
+    </encoder>
+    <filter class="ch.qos.logback.classic.filter.LevelFilter">
+      <level>ERROR</level>
+      <onMatch>ACCEPT</onMatch>
+      <onMismatch>DENY</onMismatch>
+    </filter>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- 按天回滚 daily -->
+      <fileNamePattern>${log_dir}/error%d{yyyy-MM-dd}.log
+      </fileNamePattern>
+      <!-- 日志最大的历史 60天 -->
+      <maxHistory>${maxHistory}</maxHistory>
+<!--      <maxFileSize>${maxSize}</maxFileSize>-->
+      <totalSizeCap>${totalSize}</totalSizeCap>
+    </rollingPolicy>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <charset>${charset}</charset>
+      <pattern>${pattern}</pattern>
+    </encoder>
+  </appender>
+<!--  <logger name="com.aegis.template.controller" level="info" additivity="true">-->
+<!--    <appender-ref ref="info"/>-->
+<!--  </logger>-->
+  <!--<logger name="com.aegis.template.controller" level="error" additivity="true">-->
+    <!--<appender-ref ref="error"/>-->
+  <!--</logger>-->
+  <logger name="exception" level="error">
+    <appender-ref ref="ERROR"/>
+  </logger>
+  <logger name="io.swagger.models.parameters.AbstractSerializableParameter" level="error" />
+  <root level="info">
+    <appender-ref ref="console"/>
+    <appender-ref ref="info"/>
+    <appender-ref ref="ERROR"/>
+  </root>
+
+</configuration>

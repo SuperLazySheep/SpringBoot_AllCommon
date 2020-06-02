@@ -1,0 +1,13 @@
+
+<<<<<<< HEAD
+msquid:S1192"JDefine a constant instead of duplicating this literal "newspaper" 5 times.(Š¤ÏØıÿÿÿÿ8°¦âô¦.
+qsquid:S1192"NDefine a constant instead of duplicating this literal "demoTest1Task" 5 times.(Š¤ÏØıÿÿÿÿ8°¦âô¦.
+nsquid:UselessImportCheck"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡Ú8¦û–î¦.
+=======
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8•àá—§.
+qsquid:S1192"NDefine a constant instead of duplicating this literal "demoTest1Task" 5 times.(Š¤ÏØıÿÿÿÿ8°¦âô¦.
+msquid:S1192"JDefine a constant instead of duplicating this literal "newspaper" 5 times.(Š¤ÏØıÿÿÿÿ8°¦âô¦.
+Osquid:S1612>",Replace this lambda with a method reference.(ÉìÊÔùÿÿÿÿ8Šè­˜§.
+[
+squid:S106>"9Replace this use of System.out or System.err by a logger.(ÉìÊÔùÿÿÿÿ8Šè­˜§.
+>>>>>>> springbooté›†æˆjpa
