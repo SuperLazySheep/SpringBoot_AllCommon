@@ -1,4 +1,4 @@
-# SpringBoot+Jpa+swagger   （待完成）
+# SpringBoot+Jpa+swagger   （文档待完成）
 
 #### 1.先集成swagger
 
