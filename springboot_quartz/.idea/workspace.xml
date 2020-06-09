@@ -17,11 +17,8 @@
     <session id="-384068355">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-<<<<<<< HEAD
           <entry key="project.closed" value="6" />
-=======
           <entry key="project.closed" value="7" />
->>>>>>> springboot集成jpa
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.36" value="1" />
@@ -76,7 +73,6 @@
     </session>
   </component>
   <component name="FileEditorManager">
-<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kiki/quartz3/QuartzJobManager.java">
@@ -279,9 +275,7 @@
         </entry>
       </file>
     </leaf>
-=======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
->>>>>>> springboot集成jpa
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -347,11 +341,8 @@
     <option name="jreName" value="1.8" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
-<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="7">
-=======
   <component name="ProjectFrameBounds" extendedState="6">
->>>>>>> springboot集成jpa
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -388,11 +379,8 @@
     <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.40669855" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591081940445" />
-=======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591082724584" />
->>>>>>> springboot集成jpa
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
@@ -500,20 +488,14 @@
       <workItem from="1590972213091" duration="5097000" />
       <workItem from="1590978804729" duration="2831000" />
       <workItem from="1590989819825" duration="16079000" />
-<<<<<<< HEAD
       <workItem from="1591059840291" duration="10034000" />
-=======
       <workItem from="1591059840291" duration="10636000" />
->>>>>>> springboot集成jpa
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
     <option name="totallyTimeSpent" value="72427000" />
-=======
     <option name="totallyTimeSpent" value="73029000" />
->>>>>>> springboot集成jpa
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,10 +508,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-<<<<<<< HEAD
     <editor active="true" />
-=======
->>>>>>> springboot集成jpa
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22453083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -779,11 +758,8 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.3.0/quartz-2.3.0-sources.jar!/org/quartz/Scheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="10810">
-=======
         <state relative-caret-position="10833">
->>>>>>> springboot集成jpa
           <caret line="493" column="7" selection-start-line="493" selection-start-column="7" selection-end-line="493" selection-end-column="7" />
         </state>
       </provider>
@@ -821,11 +797,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kiki/quartz3/QuartzJobFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="-36">
-=======
         <state relative-caret-position="12">
->>>>>>> springboot集成jpa
           <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
